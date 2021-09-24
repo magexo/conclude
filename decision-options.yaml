@@ -1,0 +1,34 @@
+name: decision-options
+label: Decision II
+description: Make a decision from a list of options
+enable_deadline: true
+attributes:
+  - name: title
+    type: string
+    label: Proposal
+    placeholder: What do you propose?
+    mandatory: true
+  - name: body
+    type: text
+    label: Description
+    placeholder: More details here
+  - name: decision
+    type: select
+    label: Decision
+    hint: Setting this will close the proposal
+    visible: edit,conclude
+    important: true
+    options:
+      - name: "yes"
+        label: ":thumbsup: Yes"
+      - name: "no"
+        label: ":thumbsdown: No"
+      - name: delay
+        label: ":hourglass_flowing_sand: Delay until later"
+    trigger:
+      conclude: true
+  - name: conclusion
+    type: text
+    label: See decision
+    visible: never
+subject: proposal

@@ -1,0 +1,19 @@
+name: simple
+label: Simple
+description: A simple app
+attributes:
+  - name: title
+    type: string
+    label: Subject
+    placeholder: Enter subject here
+    mandatory: true
+  - name: body
+    type: text
+    label: Details
+    placeholder: Enter details here
+  - name: conclusion
+    type: text
+    label: Conclusion
+    placeholder: What is the conclusion?
+subject: activity
+launch_button: Launch

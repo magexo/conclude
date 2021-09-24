@@ -1,0 +1,19 @@
+name: decision
+label: Decision
+description: Make a decision
+enable_deadline: true
+attributes:
+  - name: title
+    type: string
+    label: Proposal
+    placeholder: What do you propose?
+    mandatory: true
+  - name: body
+    type: text
+    label: Description
+    placeholder: More details here
+  - name: conclusion
+    type: text
+    label: Decision
+    placeholder: What is the decision?
+subject: proposal

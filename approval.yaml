@@ -1,0 +1,36 @@
+name: approval
+label: Approval
+description: Request for approval
+superusers: ${__installer}
+owner: ${__blank}
+members: ${__channel} ${initiator}
+alert: ${__channel} ${initiator}
+attributes:
+  - name: title
+    type: string
+    label: Request
+    placeholder: What is your request?
+    mandatory: true
+  - name: body
+    type: text
+    label: Description
+    placeholder: More details here
+  - protected: ${superusers}
+    name: decision
+    type: select
+    label: Decision
+    hint: Setting this will close the approval
+    visible: edit,conclude
+    important: true
+    options:
+      - name: approved
+        label: Approved
+      - name: rejected
+        label: Declined
+    trigger:
+      conclude: true
+  - name: conclusion
+    type: text
+    label: See decision
+    visible: never
+subject: request

@@ -1,0 +1,43 @@
+name: incident
+label: Incident
+description: Incident management
+enable_severity: true
+attributes:
+  - name: title
+    type: string
+    label: Incident
+    placeholder: Brief headline
+    mandatory: true
+  - name: body
+    type: text
+    label: Incident details
+    placeholder: More information here
+  - name: conclusion
+    type: text
+    label: Resolution
+    placeholder: What was the resolution?
+  - name: severity
+    type: select
+    label: Severity
+    default_value: none
+    visible: always
+    options:
+      - name: none
+        label: ":ok_hand: None"
+      - name: unknown
+        label: ":thinking_face: Unknown"
+      - name: low
+        label: ":warning: Low"
+      - name: medium
+        label: ":exclamation: Medium"
+      - name: high
+        label: :x:️ High
+      - name: critical
+        label: ":fire: Critical"
+  - name: notes
+    type: text
+    label: Internal notes
+    visible: edit
+subject: incident ticket
+launch_button: Report Incident
+create_caption: Report Incident

@@ -1,0 +1,34 @@
+name: service-desk
+label: Service desk
+description: Service desk ticketing system
+members: ${__channel} ${initiator}
+alert: ${__channel} ${initiator}
+attributes:
+  - name: title
+    type: string
+    label: Subject
+    placeholder: What is you inquiry about?
+    mandatory: true
+  - name: body
+    type: text
+    label: Description
+    placeholder: Please provide details here
+  - name: conclusion
+    type: text
+    label: Resolution
+    placeholder: What is the resolution?
+  - name: category
+    type: select
+    label: Category (internal use)
+    default_value: general
+    visible: edit
+    options:
+      - name: general
+        label: General question
+      - name: software
+        label: Software problem
+      - name: hardware
+        label: Hardware problem
+      - name: network
+        label: Network problem
+subject: ticket

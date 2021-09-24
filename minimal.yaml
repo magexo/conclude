@@ -1,0 +1,13 @@
+name: minimal
+label: Minimal
+description: A minimal app
+notifications: none
+attributes:
+  - name: title
+    type: string
+    label: Subject
+    mandatory: true
+  - name: conclusion
+    type: text
+    label: Conclusion
+subject: activity
