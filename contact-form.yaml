@@ -30,7 +30,7 @@ attributes:
   - name: conclusion
     type: text
     label: Resolution
-    placeholder: 'Optional: Internal action to resolve or follow up this request'
+    placeholder: "Optional: Internal action to resolve or follow up this request"
 subject: request
 launch_button: Create Request
 create_caption: Create Request
