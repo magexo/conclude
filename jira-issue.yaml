@@ -1,0 +1,66 @@
+name: jira-issue
+label: Jira Issue
+enable_severity: true
+attributes:
+  - name: title
+    type: string
+    label: Issue
+    placeholder: Summary
+    mandatory: true
+  - name: jira_type
+    type: select
+    label: Issue Type
+    mandatory: true
+    options:
+      - name: task
+        label: Task
+      - name: improvement
+        label: Improvement
+      - name: bug
+        label: Bug
+      - name: new_feature
+        label: New Feature
+  - name: severity
+    type: select
+    label: Priority
+    default_value: medium
+    visible: create,edit
+    options:
+      - name: low
+        label: ":warning: Low"
+      - name: medium
+        label: ":exclamation: Medium"
+      - name: high
+        label: ":x: High"
+      - name: critical
+        label: ":fire: Critical"
+  - name: jira_status
+    type: select
+    label: Status
+    default_value: In Progress
+    visible: create,edit
+    mandatory: true
+    options:
+      - name: todo
+        label: To Do
+      - name: in_progress
+        label: In Progress
+      - name: in_review
+        label: In Review
+      - name: Done
+        label: Done
+  - name: body
+    type: text
+    label: Description
+    placeholder: More details here
+  - name: jira_link
+    type: button
+    label: Jira Issue
+    visible: edit,conclude
+    auto_hide: true
+  - name: conclusion
+    type: text
+    label: See decision
+    visible: never
+subject: issue
+launch_button: New Issue
