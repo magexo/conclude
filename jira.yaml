@@ -1,0 +1,24 @@
+name: jira-issue
+label: Jira Issue
+enable_severity: true
+attributes:
+  - name: title
+    type: string
+    label: Issue
+    placeholder: Summary
+    mandatory: true
+  - name: body
+    type: text
+    label: Description
+    placeholder: More details here
+  - name: jira_link
+    type: button
+    label: Jira Issue
+    visible: edit,conclude
+    auto_hide: true
+  - name: conclusion
+    type: text
+    label: See decision
+    visible: never
+subject: issue
+launch_button: New Issue
