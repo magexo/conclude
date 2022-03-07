@@ -18,7 +18,7 @@ attributes:
     auto_hide: true
   - name: conclusion
     type: text
-    label: See decision
-    visible: never
+    label: Resolution
+    visible: conclude
 subject: issue
 launch_button: New Issue
