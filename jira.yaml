@@ -11,7 +11,7 @@ attributes:
     type: text
     label: Description
     placeholder: More details here
-  - name: jira_link
+  - name: jira_url
     type: button
     label: Jira Issue
     visible: edit,conclude
