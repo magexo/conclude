@@ -1,21 +1,21 @@
 name: jira-issue
 label: Jira Issue
+channel_name: ${__channel}_${jira_key}
 enable_severity: true
 attributes:
   - name: title
     type: string
     label: Issue
     placeholder: Summary
+    display: "[<${jira_url}|${jira_key}>] ${title}"
     mandatory: true
+  - name: jira_tag
+    type: tag
+    label: "<${jira_url}|${jira_key}>"
   - name: body
     type: text
     label: Description
     placeholder: More details here
-  - name: jira_url
-    type: button
-    label: Jira Issue
-    visible: edit,conclude
-    auto_hide: true
   - name: conclusion
     type: text
     label: Resolution
