@@ -1,6 +1,6 @@
 name: jira-issue
 label: Jira Issue
-channel_name: ${__channel}_${jira_key}
+channel_name: _${__channel}_${jira_key}
 enable_severity: true
 attributes:
   - name: title
