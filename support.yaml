@@ -1,0 +1,20 @@
+name: support
+label: Support
+description: Support ticketing system
+members: ${__channel} ${initiator}
+alert: ${__channel} ${initiator}
+attributes:
+  - name: title
+    type: string
+    label: Subject
+    placeholder: What is the inquiry about?
+    mandatory: true
+  - name: body
+    type: text
+    label: Description
+    placeholder: Please provide details here
+  - name: conclusion
+    type: text
+    label: Resolution
+    placeholder: What is the resolution?
+subject: ticket

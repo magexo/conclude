@@ -1,6 +1,6 @@
-name: simple
-label: Simple
-description: A simple app
+name: generic
+label: Generic app
+description: A generic app template
 attributes:
   - name: title
     type: string

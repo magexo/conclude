@@ -1,6 +1,6 @@
-name: service-desk
-label: Service desk
-description: Service desk ticketing system
+name: helpdesk
+label: Helpdesk
+description: Helpdesk ticketing system
 members: ${__channel} ${initiator}
 alert: ${__channel} ${initiator}
 attributes:
