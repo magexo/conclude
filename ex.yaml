@@ -1,6 +1,6 @@
-name: decision
-label: Decision
-description: Make a decision
+name: ex
+label: Execute
+description: Make a decision and execute
 enable_deadline: true
 attributes:
   - name: title
@@ -16,4 +16,4 @@ attributes:
     type: text
     label: Decision
     placeholder: What is the decision?
-subject: proposal
+subject: execution
